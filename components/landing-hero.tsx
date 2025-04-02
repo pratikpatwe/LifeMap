@@ -23,7 +23,8 @@ export function LandingHero() {
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
           {/* Content side */}
           <div className={`flex flex-col justify-center space-y-6 transition-all duration-700 ${animateIn ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-2">
+
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-2 w-fit">
               <Sparkles className="h-4 w-4 mr-2" />
               <span>Intelligent organization, effortless living</span>
             </div>
@@ -72,7 +73,7 @@ export function LandingHero() {
           <div className={`flex items-center justify-center transition-all duration-1000 delay-300 ${animateIn ? 'translate-y-0 opacity-100 rotate-0' : 'translate-y-8 opacity-0 rotate-2'}`}>
             <div className="relative w-full max-w-[520px] aspect-square">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-secondary/20 rounded-2xl shadow-xl flex items-center justify-center rotate-1 transform-gpu">
-                <div className="w-[92%] h-[92%] bg-card rounded-xl shadow-lg p-6 flex flex-col gap-5 backdrop-blur-sm bg-background/95">
+                <div className="w-[92%] h-[92%] rounded-xl shadow-lg p-6 flex flex-col gap-5 backdrop-blur-sm bg-background/95">
                   <div className="flex items-center gap-2 text-primary font-semibold">
                     <Brain className="h-5 w-5" />
                     <span>AI Suggestions</span>

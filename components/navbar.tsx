@@ -42,7 +42,15 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { isSignedIn } = useAuth()
 
-  const filteredRoutes = routes.filter((route) => route.public || isSignedIn)
+  // Filter routes based on authentication status and current path
+  const filteredRoutes = routes.filter((route) => {
+    // Hide Home link when on homepage
+    if (route.href === "/" && pathname === "/") {
+      return false
+    }
+    // Show only routes that are public or user is signed in
+    return route.public || isSignedIn
+  })
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -128,4 +136,3 @@ export function Navbar() {
     </header>
   )
 }
-
