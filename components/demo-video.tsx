@@ -107,18 +107,6 @@ const VideoSection = () => {
               </div>
             ))}
           </motion.div>
-
-          <motion.div
-            variants={itemVariants}
-            className="mt-12 text-center"
-          >
-            <a
-              href="#get-started"
-              className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-            >
-              Get Started Now
-            </a>
-          </motion.div>
         </motion.div>
       </div>
     </section>
