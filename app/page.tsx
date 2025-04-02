@@ -3,6 +3,7 @@ import { Features } from "@/components/features"
 import { Testimonials } from "@/components/testimonials"
 import { Footer } from "@/components/footer"
 import { Navbar } from "@/components/navbar"
+import VideoSection from "@/components/demo-video"
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <main className="flex-1">
         <LandingHero />
         <Features />
+        <VideoSection />
         <Testimonials />
       </main>
       <Footer />
