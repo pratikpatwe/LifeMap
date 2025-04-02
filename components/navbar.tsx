@@ -26,11 +26,6 @@ const routes = [
     public: false,
   },
   {
-    label: "Calendar",
-    href: "/calendar",
-    public: false,
-  },
-  {
     label: "Assistant",
     href: "/assistant",
     public: false,

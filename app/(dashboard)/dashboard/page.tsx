@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -103,8 +104,10 @@ export default function DashboardPage() {
             Welcome back, {user?.firstName || "there"}! Here's an overview of your day.
           </p>
         </div>
-        <Button onClick={handleAskAssistant}>
-          <Brain className="mr-2 h-4 w-4" /> Ask AI Assistant
+        <Button variant="link" className="bg-white rounded-md px-4 py-2 text-black font-medium" asChild>
+          <Link href="/assistant" className="flex items-center no-underline hover:no-underline">
+            <Brain className="mr-2 h-4 w-4" /> Ask AI Assistant
+          </Link>
         </Button>
       </div>
 
