@@ -19,13 +19,13 @@ export function LandingHero() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild size="lg">
-                <Link href="/register">
+                <Link href="/dashboard">
                   Get Started
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button variant="outline" size="lg">
-                <Link href="/dashboard">Try Demo</Link>
+                <Link href="/#demo">Try Demo</Link>
               </Button>
             </div>
           </div>
